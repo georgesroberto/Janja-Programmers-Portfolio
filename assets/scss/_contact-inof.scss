@@ -1,0 +1,63 @@
+.contact-info-area{
+    .contact-caption{
+        h3{
+            font-size: 48px;
+            display: block;
+            color: $heading-color;
+            font-weight: 600;
+            margin-bottom: 40px;
+            @media #{$sm}{
+                font-size: 31px;
+            }
+            @media #{$xs}{
+                font-size: 28px;
+                line-height: 1.6;
+            }
+        }
+        p{
+            margin-bottom: 40px;
+        }
+        img{
+
+        }
+    }
+    .contact-wrapper{
+        input {
+            background:#fff;
+            height: 60px;
+            width: 100%;
+            padding: 10px 26px;
+            border: 0;
+            color: #a3a3a3;
+            font-weight: 500;
+            text-transform: capitalize;
+            border-radius: 0px;
+            border: 0;
+            margin-bottom: 30px;
+            &::placeholder{
+                color: #9696a7;
+                font-weight: 300;
+                font-size: 16px;
+            }
+        }
+       textarea {
+            color: #a3a3a3;
+            background:#fff;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: capitalize;
+            height: 160px;
+            width: 100%;
+            padding: 30px 26px;
+            border: 0;
+            border-radius: 0px;
+            border: 0;
+            margin-bottom: 30px;
+            &::placeholder{
+                color: #9696a7;
+                font-weight: 300;
+                font-size: 16px;
+            }
+        }
+    }
+}

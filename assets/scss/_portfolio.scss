@@ -1,0 +1,35 @@
+.portfolio-details-area{
+    .details-img{
+        img{
+            width: 100%;
+        }
+    }
+    .details-caption {
+        @media #{$md}{
+            padding-left: 0;
+          }
+        @media #{$sm}{
+            padding-left: 0;
+          }
+        @media #{$xs}{
+            padding-left: 0;
+          }
+        h3 {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 23px;
+
+            @media #{$sm}{
+                font-size: 29px;
+              }
+            @media #{$xs}{
+                font-size: 29px;
+              }
+        }
+        p{
+            color: #677294;
+        }
+    }
+   
+}

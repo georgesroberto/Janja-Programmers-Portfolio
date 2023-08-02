@@ -1,0 +1,117 @@
+.categories-area {
+    background-image: url(../img/gallery/shape1.png);
+    background-size: 71%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    @media #{$md}{
+      background-image: unset;
+    }
+    @media #{$sm}{
+      background-image: unset;
+    }
+    @media #{$xs}{
+      background-image: unset;
+    }
+    &.categories-area2{
+        background-image: unset;
+    }
+    .single-cat{
+        border: 1px solid #e1ebf7;
+        border-radius: 6px;
+        padding: 61px 22px;
+        @include transition(.4s);
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0;
+            background:#ff3d1c;
+            transition: .6s;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            border-radius: 6px;
+        }
+        .cat-icon{
+            span{
+                color: $theme-color;
+                font-size: 50px;
+                margin-bottom: 30px;
+                display: block;
+                margin-bottom: 50px;
+
+                width: 100px;
+                height: 100px;
+                background:#fff4f4;
+                line-height: 100px;
+                text-align: center;
+                border-radius: 50px;
+                display: inline-block;
+            }
+        }
+        .cat-cap{
+            h5{
+             & > a{
+                font-size: 25px;
+                font-weight: 700;
+                margin-bottom: 21px;
+                display: block;
+                @include transition(.2s);
+                @media #{$sm}{
+                    font-size: 21px;
+                }
+                @media #{$xs}{
+                    font-size: 21px;
+                }
+              }
+            }
+            p{
+                margin-bottom: 36px;
+                color: #57667e;
+                font-size: 16px;
+                @include transition(.2s);
+                margin: 0;
+                @media #{$sm}{
+                    font-size: 15px;
+
+                }
+            }
+            a{
+                color: #1c165c;
+                font-size: 16px;
+                font-weight: 600;
+                @include transition(.2s);
+            }
+        }
+
+
+        // Hover Effect In single 
+        &:hover{
+            border: 1px solid transparent;
+            // background: #ff3d1c;
+
+            &::before {
+                height: 100%;
+            }
+            .cat-icon{
+            span{
+                background:#fff;
+            }
+            }
+            .cat-cap{
+                h5{
+                    color: #fff;
+                }
+                p{
+                    color: #fff;
+                }
+                a{
+                    color: #fff;
+                }
+            }
+       }
+    }
+}

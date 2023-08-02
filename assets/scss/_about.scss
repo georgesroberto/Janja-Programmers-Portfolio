@@ -1,0 +1,122 @@
+.about-area{
+    .about-caption{
+        h3{
+            font-size: 30px;
+            color: #000a2d;
+            font-weight: 700;
+            margin-bottom: 35px;
+            line-height: 1.5;
+            @media #{$xs}{
+                font-size: 24px;
+                line-height: 1.6;
+            }
+           
+        }
+        .pera1{
+            margin-bottom: 25px;
+        }
+
+    }
+    .about-caption2{
+        h3{
+            font-size: 40px;
+            color: #000a2d;
+            font-weight: 700;
+            margin-bottom: 35px;
+            line-height: 1.5;
+            @media #{$md}{
+                font-size: 30px;
+            }
+            @media #{$sm}{
+                font-size: 30px;
+            }
+            @media #{$xs}{
+                font-size: 25px;
+            }
+
+        }
+        p{
+            color: #464d65;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .send-cv{
+            display: flex;
+            justify-content: space-between;
+            a{
+                color: #000a2d;
+                font-size: 35px;
+                font-weight: 500;
+                margin-bottom: 10px;
+                text-decoration: underline;
+                display: inline-block;
+                @media #{$md}{
+                    font-size: 30px;
+                }
+                @media #{$sm}{
+                    font-size: 28px;
+                }
+                @media #{$xs}{
+                    font-size: 25px;
+                }
+            }
+            i{
+                font-size: 30px;
+                cursor: pointer;
+                text-decoration: double underline;
+                position: relative;
+                bottom: -10px;
+                @media #{$sm}{
+                    bottom: -6px;
+                    font-size: 23px;
+
+                }
+                @media #{$xs}{
+                    bottom: -6px;
+                    font-size: 23px;
+
+                }
+            }
+        }
+
+    }
+}
+
+.about-me{
+    .about-me-img{
+        img{
+            width: 100%;
+        }
+    }
+    .about-me-caption{
+        h2 {
+            font-size: 48px;
+            display: block;
+            color: $heading-color;
+            font-weight: 600;
+            margin-bottom: 40px;
+            @media #{$lg}{
+                font-size: 41px;
+            }
+            @media #{$md}{
+                font-size: 35px;
+            }
+            @media #{$sm}{
+                font-size: 31px;
+            }
+            @media #{$xs}{
+                font-size: 24px;
+                line-height: 1.6;
+            }
+        }
+        p{
+
+        }
+        h5{
+            padding-left: 25px;
+            border-left: 2px solid #ff5f13;
+            margin-bottom: 30px;
+        }
+    }
+}
